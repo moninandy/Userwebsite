@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+.navbar{
+
+background-color: black;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    padding: 20px;
+
+}
+.logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+    .menu a{
+        margin: 0px  10px;
+        text-decoration: none;
+        padding:8px;
+        color:white
+
+    }
+    .menu a:hover{
+        cursor: pointer;
+        color:blue;
+    }
+    .menu1{
+        height:10px;
+        width:30px;
+        background-color: #fff;
+        margin: 2px;
+        border-radius: 2px;
+    }
+    .hamburger{
+        display:none;
+    }
+
+
+
+ @media screen and (max-width:580px){
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: none;
+
+}
+.hamburger{
+    display: block;
+    
+}
+.showmenu{
+    display:block;
+    display: flex;
+}
+.showmenu:hover{
+    cursor:pointer;
+    color:whitesmoke;
+}
+ }
+.sample{
+    margin-top:20px;
+    height:60%;
+    display: flex;
+    justify-content:space-between;
+    
+  }
+.s1{
+    background-color:white;
+    width: 60%;
+    margin: 20px ;
+    padding: 10px;
+    border-radius: 20px;
+    
+    
+  }
+.p1{
+    margin-left: 20px;
+  }
+  .h5{
+    margin: 10px;
+  }
+  .s2{
+    width: 30%;
+    margin: auto 15px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .section1{
+    margin: 20px;
+    background-color: rgba(255, 255, 0, 0.829);
+     border-radius: 10px;
+     box-shadow: 5px 10px 10px gray;
+  }
+  .section2{
+    display :flex;
+    justify-content: space-around;
+    
+  }
+  .section2 div input{
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+  
+  }
+  .h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+.user-container{
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+  }
+  .user-container{
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    width: 300px;
+    border-radius: 0.8rem;
+    gap: 2rem;
+    transition: all 0.5s;
+  }
+  body{
+    background-image: linear-gradient(
+        to right bottom,
+        #21549f,
+        #71479e,
+        #a72e87,
+        #c9115d,
+        #d12929
+        );
+        min-height: 100vh;
+  }
+  #editName:hover,#editAvatar:hover{
+    background: rgba( 202, 46, 46, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    /* border-radius: 10px; */
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .btn1{
+    width: 50px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+  #addbutton{
+  border:none;
+  background: orange;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  }
+  .user-avatar{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .user-name{
+    font-weight: bold;
+  }
+  .user-container:hover{
+  font-size: 1.4rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: tomato
+  }
+  .user-form{
+    margin: 2rem;
+  }
+  .edit-user-form{
+    display: none;
+  }
+  .add-user-name,.add-user-avatar{
+    border: none;
+    outline: transparent;
+    border-radius: 10px;
+    height: 20px;
+    margin: 5px;
+  }
+  .add-user-name:hover,.add-user-avatar:hover{
+    border:black 2px solid;
+  }
+  .add-user-name,.add-user-avatar:placeholder-shown{
+    text-align: center;
+  }
+  .user-form{
+    text-align: center;
+  }
+  .user-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  @media (min-width: 800px) {
+    .user-list{
+    grid-template-columns: 1fr 1fr;
+    }
+    .add-user-name,.add-user-avatar{
+        width: 250px;
+        margin: 20px;
+    }
+  }
+  @media (min-width: 1100px) {
+    .user-list{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .add-user-name,.add-user-avatar{
+        margin: 20px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
+  
+  
+  
